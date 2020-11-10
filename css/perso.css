@@ -1,0 +1,91 @@
+/*****************/
+/** perso **/
+/*****************/
+/*
+Extra small<576px
+Small >=576px <768px
+Medium >=768px <992px
+Large >=992px <1200px
+Extra large >=1200px <1900
+XXL >=1900 <3000
+XXXl >=3000
+
+Max container width		0px 		576px		768px		992px		1200px		1900px		3000px
+Class prefix bootstrap	.col-		.col-sm-	.col-md-	.col-lg-	.col-xl-	.col-xxl-	.col-xxxl
+*/
+:root
+{
+--couleurDeSection:#FFF;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) and all if not redefine*/
+.row{margin-left:0 !important;margin-right:0 !important;}
+.col{padding-left:0 !important;padding-right:0 !important;}
+.container-fluid{padding-left:0 !important;padding-right:0 !important;}
+
+html {font-size:80%;}
+.navbar
+{
+	font-size:1.25rem;
+}
+section {
+	color: #363B29;
+	background: var(--couleurDeSection);
+display:table-cell;	
+
+
+height:100%;
+overflow:auto;
+
+}
+section a {
+	color: #332510;
+}
+section a:hover, section a:focus {
+	color: #6E5122;
+}
+section strong {
+	color: #181A12;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+.global {
+	max-width: 1400px; 
+	margin: 0 auto; 
+}	
+}
+
+/* xxl devices (large desktops, 1900px and up)*/
+@media (min-width: 1900px) {
+	
+}
+/* xxxl devices (large desktops, 3000px and up)*/
+@media (min-width: 3000px) {
+	
+}
+
+.contenu_hide {
+    max-height: 2em !important;
+    overflow: hidden;
+}
+
+.contenu_normal {
+    height: auto;
+}
